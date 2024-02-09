@@ -11,7 +11,7 @@ error WrongGraduation(string _msg);
 error WrongSubject(string _msg);
 
 contract GradeClass is Ownable {
-    
+
     struct Student {
         string name;
         uint256 gradeBiology;
@@ -26,21 +26,21 @@ contract GradeClass is Ownable {
 
     mapping (uint256 => Student) private students;
     mapping (address => Teacher) private teachers;
-    uint256 private nbStudents;    
+    uint256 private nbStudents;
     uint256 private avgBiology;
     uint256 private avgMaths;
-    uint256 private avgFr;    
+    uint256 private avgFr;
 
     constructor() Ownable(msg.sender) {
         addTeacher(msg.sender, "Henri D\u00E9tour\u00E9");
     }
 
     function addStudent(string memory _name) external {
-        students[nbStudents].name = _name;        
+        students[nbStudents].name = _name;
         nbStudents++;
     }
 
-    function setGrades(uint256 _studentIndex, uint256 _gradeBiology, uint256 _gradeMaths, uint256 _gradeFr) external {        
+    function setGrades(uint256 _studentIndex, uint256 _gradeBiology, uint256 _gradeMaths, uint256 _gradeFr) external {
         if (_gradeBiology > 20 || _gradeMaths > 20 || _gradeFr > 20) {
             revert WrongGraduation("Grades must be out of 20.");
         }
@@ -50,7 +50,7 @@ contract GradeClass is Ownable {
         computeAvgs();
     }
 
-    function addTeacher(address _address, string memory _name) public onlyOwner {        
+    function addTeacher(address _address, string memory _name) public onlyOwner {
         if(teachers[_address].defined) {
             revert ExistingTeacher("Teacher already defined.");
         }
