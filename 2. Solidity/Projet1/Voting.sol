@@ -184,7 +184,7 @@ contract Voting is Ownable {
     /*
         Comment: Force next phase can be used to bypass
         validation if a voter did not vote yet but we
-        cannot wait for him). It is public since it is
+        cannot wait for him. It is public since it is
         used by setNextPhase and owner.
     */
     function forceNextPhase() public onlyOwner {
@@ -242,7 +242,7 @@ contract Voting is Ownable {
         }
     }
 
-    //######## CHECKERS
+    //################################ CHECKERS
 
     /*
         Comment: Perhaps I should have left this
@@ -262,7 +262,7 @@ contract Voting is Ownable {
         }
     }
 
-    //######## UTILS
+    //################################ UTILS
 
     function compareStrings(string memory a, string memory b) private pure returns (bool) {
         return keccak256(abi.encodePacked(a)) == keccak256(abi.encodePacked(b));
