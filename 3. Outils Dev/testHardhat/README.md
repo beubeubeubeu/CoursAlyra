@@ -1,13 +1,16 @@
-# Sample Hardhat Project
+yarn hardhat node
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+hardhat compile contracts/Bank.sol
 
-Try running some of the following tasks:
+yarn hardhat run scripts/deploy.js --network sepolia
+yarn hardhat run scripts/deploy.js --network localhost
+yarn hardhat run scripts/deploy.js --network sepolia
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+yarn hardhat verify --network NETWORK verify 0xcAe0987Eae91c6D4E68f740f0C6d1Bd937095D6E
+
+yarn hardhat run scripts/deploySimpleStorage.js --network localhost
+yarn hardhat run scripts/deploySimpleStorage.js --network localhost
+yarn hardhat run scripts/getContractBalance.js --network localhost
+yarn hardhat run scripts/bankScript.js --network localhost
+
+yarn hardhat console --network localhost
