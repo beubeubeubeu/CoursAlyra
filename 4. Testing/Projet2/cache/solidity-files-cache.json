@@ -1,45 +1,9 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/Users/hlbn/Documents/CoursAlyra/4. Testing/Projet2/contracts/Lock.sol": {
-      "lastModificationDate": 1708545202072,
-      "contentHash": "dacf0d5cb5b45dc83086de5bc1c26c2c",
-      "sourceName": "contracts/Lock.sol",
-      "solcConfig": {
-        "version": "0.8.24",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.24"
-      ],
-      "artifacts": [
-        "Lock"
-      ]
-    },
     "/Users/hlbn/Documents/CoursAlyra/4. Testing/Projet2/contracts/Voting.sol": {
-      "lastModificationDate": 1708604952340,
-      "contentHash": "c28a40869517eb52bf66968c954363e5",
+      "lastModificationDate": 1708869598166,
+      "contentHash": "a2bdf66dbfc1650923e928ef8e8806d2",
       "sourceName": "contracts/Voting.sol",
       "solcConfig": {
         "version": "0.8.24",
@@ -62,6 +26,9 @@
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": false
           }
         }
       },
@@ -76,7 +43,7 @@
       ]
     },
     "/Users/hlbn/Documents/CoursAlyra/4. Testing/Projet2/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
-      "lastModificationDate": 1708545245686,
+      "lastModificationDate": 1708683822669,
       "contentHash": "d3c790edc9ccf808a17c5a6cd13614fd",
       "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
       "solcConfig": {
@@ -100,6 +67,9 @@
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": false
           }
         }
       },
@@ -114,7 +84,7 @@
       ]
     },
     "/Users/hlbn/Documents/CoursAlyra/4. Testing/Projet2/node_modules/@openzeppelin/contracts/utils/Context.sol": {
-      "lastModificationDate": 1708545245687,
+      "lastModificationDate": 1708683822683,
       "contentHash": "67bfbc07588eb8683b3fd8f6f909563e",
       "sourceName": "@openzeppelin/contracts/utils/Context.sol",
       "solcConfig": {
@@ -138,6 +108,9 @@
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": false
           }
         }
       },
