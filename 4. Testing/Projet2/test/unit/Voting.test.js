@@ -55,7 +55,7 @@ describe("Voting smart contract's tests", function () {
 	 *
 	 * Sets tied winners and given
 	 * tallyVote implementation proposition
-	 * with lower id is the winner
+	 * with lower id as the winner
 	 *
 	**/
 	function votesDistributionWithTiedWinners(votersCount, proposalsCount) {
