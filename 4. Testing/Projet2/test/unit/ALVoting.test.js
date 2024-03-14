@@ -1,3 +1,5 @@
+// For inspiration, made by Aurélien Lebrun, aka LordThergal
+
 const { expect } = require("chai");
 const { ethers } = require('hardhat');
 
